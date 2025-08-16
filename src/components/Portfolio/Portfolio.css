@@ -1,0 +1,137 @@
+/* Portfolio.css */
+
+.portfolio {
+  font-family: var(--font-family-heading);
+  width: 100%;
+  padding: 3rem 0;
+  background: #ffffff;
+}
+
+.portfolio-container {
+  max-width: 1000px;
+  margin: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* Coluna Esquerda (texto) */
+.portfolio-text-content {
+  flex: 1;
+  max-width: 400px;
+  color: var(--dark-dark-purple)
+}
+
+.portfolio-text-content span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.portfolio-text-content h2 {
+  font-size: 3.8rem;
+  font-weight: 850;
+  margin: 1rem 0 2rem;
+  line-height: 1.1;
+}
+
+.portfolio-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-purple);
+  color: #fff;
+  padding: 0.9rem 1.6rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 18em;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+
+.portfolio-button:hover {
+  background: var(--dark-dark-purple);
+  transform: translateY(-2px);
+}
+
+.portfolio-button svg {
+  position: relative;
+  top: 3px;        
+}
+
+.portfolio-carousel-content {
+  flex: 2;
+  width: 100%;
+}
+
+.portfolio-carousel-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 6px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-purple);
+  opacity: 1;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: var(--dark-dark-purple);
+  width: 35px;
+  transform: scale(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .portfolio-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .portfolio-text-content {
+    max-width: 100%;
+  }
+
+  .portfolio-text-content h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-button {
+    margin: 0 auto;
+  }
+
+  .portfolio-carousel-content {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-text-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .portfolio-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

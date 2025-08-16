@@ -1,0 +1,63 @@
+:root {
+  --primary-purple: #6503A6;
+  --rgb-primary-purple: 106, 13, 173;
+  --dark-purple: #3B0273;
+  --dark-dark-purple: #210140;
+  --dark-bg: #0D0D0D;
+  --light-bg: #f7f7f7;
+  --white-color: #f1f1f1;
+  --text-color: #333333;
+  --text-light: #666666;
+  --border-color: #e0e0e0;
+  --font-family-body: 'Archivo', sans-serif;
+  --font-family-heading: 'Urbanist', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 80px; 
+}
+
+body {
+  font-family: var(--font-family-body);
+  background-color: var(--white-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-family);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
