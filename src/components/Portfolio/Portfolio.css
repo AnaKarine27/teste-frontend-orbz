@@ -1,5 +1,3 @@
-/* Portfolio.css */
-
 .portfolio {
   font-family: var(--font-family-heading);
   width: 100%;
@@ -16,7 +14,6 @@
   gap: 3rem;
 }
 
-/* Coluna Esquerda (texto) */
 .portfolio-text-content {
   flex: 1;
   max-width: 400px;
@@ -101,7 +98,6 @@
   transform: scale(1.2);
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
   .portfolio-container {
     flex-direction: column;
